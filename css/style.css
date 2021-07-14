@@ -350,7 +350,7 @@ article > .article-item .read-more-button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 100px 5% 60px 5%;
+    margin: 100px 0% 60px 2%;
     justify-content: center;
     align-items: center;
   }
