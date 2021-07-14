@@ -46,8 +46,15 @@ p {
 .header-section > nav > ul li:last-child {
   padding-right: 0px;
 }
+.header-section > nav > ul li a:hover {
+  border-bottom: 5px solid #e02c6d;
+}
 .header-section > nav > ul li a {
   font-size: 16px;
+  padding: 10px;
+}
+.header-section > nav > ul li a.active {
+  background: #e02c6d;
 }
 
 /* Login Button */
