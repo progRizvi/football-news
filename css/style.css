@@ -316,10 +316,13 @@ article > .article-item .read-more-button {
         RESPONSIVE SECTION
 =============================*/
 
+/* Mobile Device */
+
 @media only screen and (max-width: 687px) {
   .header-section {
     width: 100%;
     padding: 42px 0px 0px 16px;
+    position: relative;
   }
   nav {
     flex-direction: column;
@@ -327,10 +330,12 @@ article > .article-item .read-more-button {
   nav ul li {
     display: none;
   }
-  .search-box {
-    display: none;
+  .login-search-box {
+    position: absolute;
+    top: 50px;
+    right: 50px;
   }
-  nav login .header-content-text h1 {
+  .search-box {
     display: none;
   }
   .header-content {
@@ -420,5 +425,84 @@ article > .article-item .read-more-button {
   }
   footer .footer-content img {
     width: 70%;
+  }
+}
+
+/* Tablet Device */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .header-section {
+    width: 100%;
+    padding: 42px 0px 0px 16px;
+    position: relative;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: none;
+  }
+  .login-search-box {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  .search-box {
+    display: none;
+  }
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-content-text {
+    width: 90%;
+  }
+  .header-content-text h1 {
+    font-size: 35px;
+    width: 300px;
+    margin-top: 46px;
+  }
+  .header-img {
+    width: 95%;
+  }
+  .header-img img {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0px;
+    height: auto;
+  }
+  article {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5%;
+    grid-column-gap: 10px;
+  }
+  .pagination-container {
+    display: flex;
+    width: 100%;
+    margin: 30px 0px 50px 0px;
+  }
+  .highlight-section {
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .highlight-text {
+    width: 100%;
+    margin-right: 0px;
+    padding: 15px;
+  }
+  .highlight-section .highlight-text h2 {
+    font-size: 30px;
+  }
+  .highlight-section .highlight-img {
+    margin-top: 29px;
+  }
+  .highlight-section .highlight-img img {
+    width: 100%;
+    height: auto;
   }
 }
