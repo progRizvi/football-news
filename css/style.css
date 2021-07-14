@@ -261,6 +261,7 @@ article > .article-item .read-more-button {
 .subscribe input {
   font-size: 22px;
   padding: 10px;
+  border-top: 1px solid #000;
 }
 .subscribe button {
   font-size: 22px;
@@ -504,5 +505,37 @@ article > .article-item .read-more-button {
   .highlight-section .highlight-img img {
     width: 100%;
     height: auto;
+  }
+}
+
+/* Medium Device */
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  .header-section {
+    width: 100%;
+    padding: 42px 16px 0px 16px;
+    position: relative;
+  }
+  .header-section > nav > ul li {
+    padding-right: 15px;
+  }
+  .login-search-box .search-box input[type="text"] {
+    width: 180px;
+  }
+  .header-content-text > h1 {
+    font-size: 50px;
+  }
+  article {
+    grid-column-gap: 10px;
+    margin: 70px 2% 0px 2%;
+    padding: 0% 5%;
+  }
+  .highlight-section {
+    padding: 0px 5%;
+  }
+  .highlight-text h2 {
+    font-size: 40px;
+  }
+  .subscribe h2 {
+    margin-bottom: 50px;
   }
 }
